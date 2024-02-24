@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Лінійні алгоритми.</h1>
+      <h2>Завдання №4</h2>
+      <p>
+        Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+      </p>
+      <script>
+        // Вхідні данні
+        let lenght = parseFloat(prompt(`Введіть довжину`));
+
+        // Проміжні значення
+        let resMetr = lenght / 100;
+        let resKm = lenght / 100000;
+
+        document.write(`Дано довжина ${lenght} см <br>
+        Довжина в метрах ${resMetr} <br>
+        Довжина в километрах ${resKm}
+        `);
+      </script>
+    </main>
+  </body>
+</html>

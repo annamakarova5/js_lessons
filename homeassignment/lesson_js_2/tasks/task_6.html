@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Лінійні алгоритми.</h1>
+      <h2>Завдання №6</h2>
+      <p>
+        З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.
+        Обчислити вартість кожного товару окремо та загальну вартість. Вивести
+        чек (як у супермаркеті) використовуючи елементи розмітки.
+      </p>
+      <script>
+        // Вхідні данні
+        let item1 = parseFloat(prompt(`Введіть вартість товару 1:`, "10"));
+        let item2 = parseFloat(prompt(`Введіть вартість товару 2:`, "10"));
+        let item3 = parseFloat(prompt(`Введіть вартість товару 3:`, "10"));
+
+        let itemQuantity1 = parseInt(
+          prompt(`Введіть кількість товару 1:`, "1")
+        );
+        let itemQuantity2 = parseInt(
+          prompt(`Введіть кількість товару 2:`, "1")
+        );
+        let itemQuantity3 = parseInt(
+          prompt(`Введіть кількість товару 3:`, "1")
+        );
+
+        // Проміжні значення
+        let itemPrice1 = item1 * itemQuantity1;
+        let itemPrice2 = item2 * itemQuantity2;
+        let itemPrice3 = item3 * itemQuantity3;
+        let total = itemPrice1 + itemPrice2 + itemPrice3;
+
+        document.write(`
+          <table border = "3">
+            <tr>
+              <th> Товар</th>
+              <th> Вартість</th>
+            </tr>
+            <tr>
+              <th> Товар 1</th>
+              <td>${itemPrice1} </td>
+            </tr>
+            <tr>
+              <th> Товар 2</th>
+              <td>${itemPrice2} </td>
+            </tr>
+            <tr>
+              <th> Товар 3</th>
+              <td>${itemPrice3} </td>
+            </tr>
+            <tr>
+              <th> Загалом</th>
+              <td> <strong>${total}</strong> </td>
+            </tr>
+          </table>
+        `);
+      </script>
+    </main>
+  </body>
+</html>

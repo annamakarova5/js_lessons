@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Лінійні алгоритми.</h1>
+      <h2>Завдання №1</h2>
+      <p>
+        Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у
+        формі таблиці
+      </p>
+      <script>
+        // Вхідні данні
+        let num1 = parseFloat(prompt(`Введіть число`));
+        let num2 = parseFloat(prompt(`Введіть число`));
+
+        let sum = num1 + num2;
+        let multiplication = num1 * num2;
+        let div = num1 / num2;
+
+        // Результат
+        // document.write(
+        //   `${sum}
+        //   ${multiplication}
+        //      ${div}`
+
+        // );
+
+        document.write(`
+          <table border = "2">
+            <tr>
+              <th> Операція</th>
+              <th> Результат</th>
+            </tr>
+            <tr>
+              <th> Сума</th>
+              <td>${sum} </td>
+            </tr>
+            <tr>
+              <th> Множення</th>
+              <td>${multiplication} </td>
+            </tr>
+            <tr>
+              <th> Ділення</th>
+              <td>${div} </td>
+            </tr>
+          </table>
+        `);
+      </script>
+    </main>
+  </body>
+</html>

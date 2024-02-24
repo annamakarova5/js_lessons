@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Лінійні алгоритми.</h1>
+      <h2>Завдання №3</h2>
+      <p>
+        Дано вартість одиниці товару і кількість. Знайти загальну вартість та
+        ПДВ (5% від загальної вартості).
+      </p>
+      <script>
+        // Вхідні данні
+        let itemPrice = parseFloat(prompt(`Введіть вартість вашого товару`));
+        let itemQuantity = parseInt(prompt(`Введіть кількість товарiв`));
+        // Проміжні значення
+        let res = itemPrice * itemQuantity;
+        // let pdv = (res * 5) / 100;
+        let pdv = res * 0.05;
+
+        document.write(`Вартість  товару ${res}<br>
+        Вартість ПДВ ${pdv}
+        `);
+      </script>
+    </main>
+  </body>
+</html>

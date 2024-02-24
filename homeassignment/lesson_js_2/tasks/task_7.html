@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Лінійні алгоритми.</h1>
+      <h2>Завдання №7</h2>
+      <p>
+        Знайти суму випадкового номера місяця (від 1 до 12) та випадкового
+        номера дня (від 0 до 6).
+      </p>
+      <script>
+        // Вхідні данні
+        // let monthRandom = Math.floor(Math.random() * 12) + 1;
+        // let dayRandom = ath.floor(Math.random() * 7);
+        // Проміжні значення
+        // let sum = monthRandom + dayRandom;
+
+        function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        let minMonth = 1;
+        let maxMonth = 12;
+        let monthRandom = getRandomInt(minMonth, maxMonth);
+
+        let minDay = 1;
+        let maxDay = 6;
+        let dayRandom = getRandomInt(minDay, maxDay);
+
+        let sum = monthRandom + dayRandom;
+
+        document.write(`
+         Випадковий місяць ${monthRandom} <br>
+         Випадковий день ${dayRandom}<br>
+         Результат суми ${sum}
+        `);
+      </script>
+    </main>
+  </body>
+</html>
