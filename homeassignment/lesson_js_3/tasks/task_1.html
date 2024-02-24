@@ -1,0 +1,32 @@
+  </head>
+  <body>
+    <main class="main">
+      <h1>Арифметичні і логічні вирази. Реалізація алгоритмів з розгалуженням.</h1>
+      <h2>Завдання №1</h2>
+      <p>
+        З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість цукерок є більшою, або вивести, що кількість однакова.
+      </p>
+      <script>
+        // Вхідні данні
+        let childName1 = prompt("Введіть ім'я 1ї дитини", "Оля")
+        let childName2 = prompt("Введіть ім'я 2ї дитини", "Яло")
+        let candyChild1 = parseInt(prompt("Кількість цукерок у  1ї дитини", 7))
+        let candyChild2 = parseInt (prompt("Кількість цукерок у  2ї дитини",5))
+        
+        // Проміжні значення
+
+        // Обчислення
+     if(candyChild1 > candyChild2)
+      document.write(`${childName1} має більше цукерок ніж ${childName2} `)
+        else if(candyChild1 < candyChild2)
+        document.write(`${childName2} має більше цукерок ніж ${childName1}`)
+      else if(candyChild1 === candyChild2)
+      document.write(`кількість цукерок однакова`)
+    else
+        document.write(`Не корерктні данні`);
+
+      </script>
+    </main>
+    
+  </body>
+</html>

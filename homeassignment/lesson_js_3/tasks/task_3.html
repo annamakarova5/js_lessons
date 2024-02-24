@@ -1,0 +1,31 @@
+</head>
+<body>
+  <main class="main">
+    <h1>Арифметичні і логічні вирази. Реалізація алгоритмів з розгалуженням.</h1>
+    <h2>Завдання №3</h2>
+    <p>
+        Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+    </p>
+    <script>
+      // Вхідні данні
+      let minNum = 1
+      let maxNum = 5
+      let randomNum = minNum + Math.floor(Math.random() * (maxNum - minNum + 1))
+      let gessAttempt1 = parseInt (prompt("Спробуйте вгадати число за 2 спроби, спроба 1",5))
+      let gessAttempt2 = parseInt (prompt("Спробуйте вгадати число за 2 спроби, спроба 2",3))
+
+      if(randomNum == gessAttempt1)
+      document.write(`Вітаю, ви вгадали з 1го разу`)
+        else if (randomNum == gessAttempt2)
+        document.write(`Вітаю, ви вгадали з 2го разу`)
+        else
+        document.write(`Спробуйте іншого разу. Рандомне число ${randomNum}`);
+
+      // Проміжні значення
+
+      // Обчислення
+
+    </script>
+  </main>
+</body>
+</html>
