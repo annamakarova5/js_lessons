@@ -1,0 +1,40 @@
+</head>
+<body>
+  <main class="main">
+    <h1>Цикли</h1>
+    <h2>Завдання №6</h2>
+    <p>
+      Вивести 3 таблиці (по 3 рядки і 3 стовпці у кожній) за зразком    </p>
+      <style>
+        table {
+          display: inline-flex;
+          margin-right: 30px;
+        }
+      </style>
+
+    <script>
+      "use strict";
+      let count=0;
+      for (let table= 1; table <=3; table++){
+        document.write(`<table border="2px">`);
+          for (let row = 1; row <=3; row++) {
+            document.write("<tr >");
+
+            for (let data = 1; data <= 3; data++) {
+              count++;
+              document.write(`<td>  ${count} </td>`);
+            }
+            document.write("</tr>");
+
+            }
+
+        document.write("</table>");
+      }
+
+
+
+
+    </script>
+  </main>
+</body>
+</html>

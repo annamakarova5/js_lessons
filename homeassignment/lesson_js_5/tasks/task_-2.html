@@ -1,0 +1,26 @@
+</head>
+<body>
+  <main class="main">
+    <h1>Цикли</h1>
+    <h2>Завдання №-2</h2>
+    <p>
+        Поступово генерувати 100 випадкових чисел від 1 до 1000. Підрахувати яких чисел більше: парних чи непарних.    </p>
+    <script>
+      
+    let oddNum = 0
+    let evenNum = 0
+    for (let i = 0; i < 100; i++) {
+        let randomNum =  1 + Math.floor(Math.random() * 1000)
+        if (randomNum%2)
+            oddNum +=1
+        else
+        evenNum +=1
+    }
+    document.write(`Непарних чисел: ${oddNum} Парних чисел ${evenNum}`)
+      
+    
+    </script>
+  </main>
+  
+</body>
+</html>

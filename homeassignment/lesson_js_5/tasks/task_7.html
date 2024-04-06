@@ -1,0 +1,24 @@
+</head>
+<body>
+  <main class="main">
+    <h1>Цикли</h1>
+    <h2>Завдання №7</h2>
+    <p>
+      Знайти суму всіх непарних чисел, що знаходяться між заданими користувачем числами.    </p>
+    <script>
+      let numFirst = parseInt(prompt("Введіть перше число"))
+      let numLast = parseInt(prompt("Введіть останнє число"))
+      let sum = 0
+      for (let i = numFirst; i < numLast; i++) {
+        if (i % 2 !=0){
+          sum+=i
+        }
+    
+        
+      }
+      document.write(`сума чисел ${sum}`)
+
+    </script>
+  </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+  </head>
+  <body>
+    <main class="main">
+      <h1>Цикли</h1>
+      <h2>Завдання №1</h2>
+      <p>
+        Вивести з використанням циклів маркований список з випадковими
+            числами (1-100). Кількість випадкових чисел вводиться користувачем.
+      </p>
+      <script>
+        "use strict";
+        let usersNum = parseInt(prompt(`Введіть число`)) 
+        for (let i = 0; i < usersNum; i++) {
+          const numRand = 1 + Math.floor(Math.random() * 100)
+          document.write(`<ul>
+          <li>${numRand} </li>
+          </ul>`)
+        }
+     
+       
+
+      </script>
+    </main>
+    
+  </body>
+</html>
